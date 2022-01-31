@@ -3,7 +3,7 @@
 # ![InfiniteRep Examples](./images/header.gif)
 
 ## Overview 
-InfiniteRep is a synthetic, open-source dataset for fitness and physical therapy applications. It includes videos of diverse avatars performing multiple repetitions of common exercises. It includes massive variation in the environment, lighting conditions, avatar demographics, and movement trajectories. From cadence to kinematic trajectory, each rep is done slightly differently -- just like real humans. InfiniteRep videos are accompanied by a rich set of pixel-perfect labels and annotations, including frame-specific repetition counts.
+InfiniteRep is a synthetic, open-source dataset for fitness and physical therapy applications. It includes videos of diverse avatars performing multiple repetitions of common exercises. It includes significant variation in the environment, lighting conditions, avatar demographics, and movement trajectories. From cadence to kinematic trajectory, each rep is done slightly differently -- just like real humans. InfiniteRep videos are accompanied by a rich set of pixel-perfect labels and annotations, including frame-specific repetition counts.
 
 The dataset features:
 
@@ -29,26 +29,26 @@ The dataset currently includes the following exercises:
 
 ## Getting Started
 
-Images and annotations can be downloaded on a per-exercise basis [here](#). You can download just one exercise, or all of them! We also provide a starter notebook that demonstrates how to filter the dataset based on metadata and visualize labels.
+Images and annotations can be downloaded on a per-exercise basis [here](#). You can download just one exercise, pick and choose several that are most relevant, or go for all of them! We also provide a starter notebook that demonstrates how to filter the dataset based on metadata and visualize labels.
 
 ## Annotations
 
 Metadata and annotations for the dataset are packaged at the level of individual videos. Each video comes with the following files: 
 
-* `{video_number}.mp4`: 224x224 RGB video (24 fps)
-* `{video_number}_img_labels.zip`: Zip file of the corresponding semantic and instance segmentation masks (with and without occlusion)
-* `{video_number}.json`: Annotations for the video, structured in COCO format
+* `{video_number}.mp4`: 224x224 RGB video (24 fps).
+* `{video_number}_img_labels.zip`: Zip file of the corresponding semantic and instance segmentation masks (with and without occlusion).
+* `{video_number}.json`: Annotations for the video, structured in COCO format.
 
-#### Scene-level annotations
+### Scene-level annotations
 
 Scene-level metadata for each video includes:
 
 * `camera_pitch`: Pitch of the camera, in degrees. A value of 90 indicates the camera's line of sight is parallel to the ground plane.
-* `camera_height`: Height of the camera relative to the floor plane, in meters
-* `avatar_presenting_gender`: Gender of the underlying SMPL-X body model
-* `avatar_attire_top`/`avatar_attire_bottom`: Clothing type used in the applied UV texture
-* `avatar_betas`: 10 shape coefficients for the underlying SMPL-X body model
-* `avatar_waist_circumference`: Circumference of the SMPL-X body model's waist, in meters
+* `camera_height`: Height of the camera relative to the floor plane, in meters.
+* `avatar_presenting_gender`: Gender of the underlying SMPL-X body model.
+* `avatar_attire_top`/`avatar_attire_bottom`: Clothing type used in the applied UV texture.
+* `avatar_betas`: 10 shape coefficients for the underlying SMPL-X body model.
+* `avatar_waist_circumference`: Circumference of the SMPL-X body model's waist, in meters.
 
 ### Frame-level annotations
 The number of repetitions in each video is provided as a continuous, per-frame value, called `rep_count`. This value represents the number of repetitions completed since the beginning of the video PLUS a float in the range of [0,1] that indicates the current frame’s relative position in the repetition sequence. For example, a value of 4.23 indicates that 4 full repetitions have been completed since the beginning of the video, and that the current frame corresponds to 23% completion of the next one.
