@@ -29,7 +29,7 @@ The dataset currently includes the following exercises:
 
 ## Getting Started
 
-Images and annotations can be downloaded on a per-exercise basis [here](#). You can download just one exercise, pick and choose several that are most relevant, or go for all of them! We also provide a starter notebook that demonstrates how to filter the dataset based on metadata and visualize labels.
+Images and annotations can be downloaded on a per-exercise basis [here](https://toinfinity.us14.list-manage.com/subscribe?u=d737c68bb0ef2f563626eb374&id=cc1d6a5621). You can download just one exercise, pick and choose several that are most relevant, or go for all of them! We also provide a starter notebook that demonstrates how to filter the dataset based on metadata and visualize labels.
 
 ## Annotations
 
