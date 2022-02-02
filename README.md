@@ -19,13 +19,15 @@ The dataset features:
 The dataset currently includes the following exercises: 
 
 1. Pushups
-2. Alternating Bicep Curls
-2. Delt Flys
+2. Alternating Bicep Curls (with dumbbells)
+2. Delt Flys (with dumbbells)
 3. Squats
 4. Bird Dogs
 5. Supermans
 6. Bicycle Crunches
 7. Leg Raises
+8. Front Raises (with dumbbells)
+9. Overhead Press (with dumbbells)
 
 ## Getting Started
 
